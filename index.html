@@ -44,6 +44,13 @@
       <li><a href="https://metadados.snirh.gov.br/geonetwork/srv/por/catalog.search#/metadata/7bb15389-1016-4d5b-9480-5f1acdadd0f5">Base Hidrográfica ANA</a></li>
       <li><a href="https://github.com/vinirn/minicurso_qgis/raw/refs/heads/main/dados/RN_massas_dagua.gpkg">Massas d'água do Rio Grande do Norte (GeoPackage)</a></li>
     </ul>
+    <h2>Recortar as áreas urbanizadas para o RN</h2>
+    <ol>
+      <li>No site do IBGE, em <strong>Downloads &gt; 2022 &gt; Shapefile</strong>, baixe e extraia o ZIP das áreas urbanizadas.</li>
+      <li>Abra o arquivo <code>.shp</code> extraído e a malha municipal do Rio Grande do Norte no QGIS.</li>
+      <li>Em <strong>Vetor &gt; Ferramentas de geoprocessamento &gt; Recortar</strong>, selecione as áreas urbanizadas como <strong>camada de entrada</strong> e a malha municipal do RN como <strong>camada de sobreposição</strong>.</li>
+      <li>Execute o recorte e salve o resultado como <code>areas_urbanizadas_rn.gpkg</code> na pasta do projeto.</li>
+    </ol>
   </main>
 </body>
 </html>
