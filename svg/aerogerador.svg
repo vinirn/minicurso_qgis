@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512" fill="none">
+<title>Ícone de aerogerador</title>
+<desc>Aerogerador de três pás, simplificado em azul-petróleo e verde-água claro, com fundo transparente e formato quadrado.</desc>
+<defs>
+<g id="pa">
+<path d="M-7-7 L-13-39 Q-9-91 2-158 Q3-162 5-158 L13-43 Q14-28 7-7Z" fill="#D9F0E9" stroke="#29677A" stroke-width="4" stroke-linejoin="round"/>
+</g>
+</defs>
+<path d="M249 176 L265 176 L279 465 L237 465Z" fill="#D9F0E9" stroke="#29677A" stroke-width="4" stroke-linejoin="round"/>
+<path d="M257 179 L263 179 L277 463 L257 463Z" fill="#78B9BE"/>
+<g transform="translate(256 179)">
+<use xlink:href="#pa" transform="rotate(22)"/>
+<use xlink:href="#pa" transform="rotate(142)"/>
+<use xlink:href="#pa" transform="rotate(262)"/>
+<circle r="13" fill="#29677A"/>
+<circle r="6" fill="#78B9BE"/>
+</g>
+</svg>
