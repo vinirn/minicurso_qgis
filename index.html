@@ -28,6 +28,16 @@
     }
     a { color: #27611e; }
     a:focus-visible { outline: 3px solid #27611e; outline-offset: 3px; }
+    .resource-list { list-style: none; padding: 0; }
+    .resource-list li { display: flex; align-items: center; gap: 1rem; padding: 0.65rem 0; border-bottom: 1px solid #edf1ea; }
+    .resource-logos { display: flex; align-items: center; justify-content: center; gap: 0.35rem; flex: 0 0 8rem; }
+    .resource-logos img { width: 3.5rem; height: 3rem; object-fit: contain; }
+    .resource-links { flex: 1; }
+    @media (max-width: 34rem) {
+      .resource-list li { align-items: flex-start; gap: 0.5rem; }
+      .resource-logos { flex-basis: 5rem; flex-wrap: wrap; }
+      .resource-logos img { width: 2.2rem; height: 2rem; }
+    }
     .symbols img { width: 3rem; height: 3rem; vertical-align: middle; margin-right: 0.5rem; }
   </style>
 </head>
@@ -37,19 +47,21 @@
     <p class="subtitle">Prof. Marcos Vinícius Cândido Henriques, UFERS Campus Angicos</p>
     <p>Links para os dados utilizados nas atividades do curso.</p>
     <h2>Dados geográficos</h2>
-    <ul>
-      <li><a href="https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html">Malhas do Rio Grande do Norte</a> — IBGE</li>
-      <li><a href="https://www.ibge.gov.br/geociencias/cartas-e-mapas/redes-geograficas/15789-areas-urbanizadas.html?=&amp;t=downloads">Áreas Urbanizadas — IBGE</a></li>
-      <li><a href="https://www.gov.br/transportes/pt-br/assuntos/dados-de-transportes/bit/bit-mapas">Rodovias Federais - BIT Mapas</a></li>
-      <li><a href="https://sigel.aneel.gov.br/portal/home/index.html">SIGEL — dados geográficos do setor elétrico (ANEEL)</a></li>
-      <li><a href="https://gisepeprd2.epe.gov.br/WebMapEPE/">Webmap da EPE — Empresa de Pesquisa Energética</a></li>
-      <li><a href="https://geo.anm.gov.br/sigmine">SIGMINE — processos minerários (ANM)</a> — em Download, escolha SHP para Rio Grande do Norte</li>
-      <li><a href="https://brasil.mapbiomas.org/">MapBiomas Brasil — cobertura e uso da terra</a> (<a href="https://brasil.mapbiomas.org/downloads/mapas-para-download-geotiff/">mapas para download em GeoTIFF</a>)</li>
-      <li><a href="https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/">MapBiomas — tabela de códigos, classes e cores da cobertura 30 m (Coleção 11)</a></li>
-      <li><a href="https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/COVERAGE_QGIS_COL11_PT_EN.zip">MapBiomas — legenda para QGIS da cobertura 30 m (Coleção 11, ZIP)</a></li>
-      <li><a href="https://www.openstreetmap.org/export#map=8/-6.061/-36.692">OpenStreetMap</a></li>
-      <li><a href="https://metadados.snirh.gov.br/geonetwork/srv/por/catalog.search#/metadata/7bb15389-1016-4d5b-9480-5f1acdadd0f5">Base Hidrográfica ANA</a></li>
-      <li><a href="https://github.com/vinirn/minicurso_qgis/raw/refs/heads/main/dados/RN_massas_dagua.gpkg">Massas d'água do Rio Grande do Norte (GeoPackage)</a></li>
+    <ul class="resource-list">
+      <li><span class="resource-logos"><img src="logos/ibge_logo.png" alt="Logo do IBGE"></span><span class="resource-links"><a href="https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html">Malhas do Rio Grande do Norte</a> — IBGE</span></li>
+      <li><span class="resource-logos"><img src="logos/ibge_logo.png" alt="Logo do IBGE"></span><span class="resource-links"><a href="https://www.ibge.gov.br/geociencias/cartas-e-mapas/redes-geograficas/15789-areas-urbanizadas.html?=&amp;t=downloads">Áreas Urbanizadas — IBGE</a></span></li>
+      <li><span class="resource-logos"><img src="logos/bit_logo.png" alt="Logo do BIT"></span><span class="resource-links"><a href="https://www.gov.br/transportes/pt-br/assuntos/dados-de-transportes/bit/bit-mapas">Rodovias Federais — BIT Mapas</a></span></li>
+      <li><span class="resource-logos"><img src="logos/aneel_logo.png" alt="Logo da ANEEL"></span><span class="resource-links"><a href="https://sigel.aneel.gov.br/portal/home/index.html">SIGEL — dados geográficos do setor elétrico (ANEEL)</a></span></li>
+      <li><span class="resource-logos"><img src="logos/epe_logo.png" alt="Logo da EPE"></span><span class="resource-links"><a href="https://gisepeprd2.epe.gov.br/WebMapEPE/">Webmap da EPE — Empresa de Pesquisa Energética</a></span></li>
+      <li><span class="resource-logos"><img src="logos/anm_logo.png" alt="Logo da ANM"></span><span class="resource-links"><a href="https://geo.anm.gov.br/sigmine">SIGMINE — processos minerários (ANM)</a> — em Download, escolha SHP para Rio Grande do Norte</span></li>
+      <li><span class="resource-logos"><img src="logos/car_logo.png" alt="Logo do CAR"><img src="logos/sicar_logo.png" alt="Logo do SICAR"></span><span class="resource-links"><a href="https://consultapublica.car.gov.br/publico/imoveis/index">CAR — Cadastro Ambiental Rural, Consulta Pública</a> — em Base de Downloads, selecione RN e baixe Perímetros dos Imóveis e outras camadas de interesse (<a href="https://consulta.car.gov.br/">acesso atual</a>)</span></li>
+      <li><span class="resource-logos"><img src="logos/mapbiomas_logo.png" alt="Logo do MapBiomas"></span><span class="resource-links"><a href="https://brasil.mapbiomas.org/">MapBiomas Brasil — cobertura e uso da terra</a> (<a href="https://brasil.mapbiomas.org/downloads/mapas-para-download-geotiff/">mapas para download em GeoTIFF</a>)</span></li>
+      <li><span class="resource-logos"><img src="logos/brazil_data_cube_logo.png" alt="Logo do Brazil Data Cube"></span><span class="resource-links"><a href="https://data.inpe.br/bdc/explorer/explore">Brazil Data Cube Explorer (INPE)</a> — imagens MOD13Q1 v061 com NDVI para download em GeoTIFF</span></li>
+      <li><span class="resource-logos"><img src="logos/mapbiomas_logo.png" alt="Logo do MapBiomas"></span><span class="resource-links"><a href="https://brasil.mapbiomas.org/iniciativas-e-produtos/cobertura-e-uso-da-terra/cobertura-30m/cobertura/">MapBiomas — tabela de códigos, classes e cores da cobertura 30 m (Coleção 11)</a></span></li>
+      <li><span class="resource-logos"><img src="logos/mapbiomas_logo.png" alt="Logo do MapBiomas"></span><span class="resource-links"><a href="https://brasil.mapbiomas.org/wp-content/uploads/sites/3/2026/08/COVERAGE_QGIS_COL11_PT_EN.zip">MapBiomas — legenda para QGIS da cobertura 30 m (Coleção 11, ZIP)</a></span></li>
+      <li><span class="resource-logos"><img src="logos/openstreetmap_logo.png" alt="Logo do OpenStreetMap"></span><span class="resource-links"><a href="https://www.openstreetmap.org/export#map=8/-6.061/-36.692">OpenStreetMap</a></span></li>
+      <li><span class="resource-logos"><img src="logos/ana_logo.png" alt="Logo da ANA"></span><span class="resource-links"><a href="https://metadados.snirh.gov.br/geonetwork/srv/por/catalog.search#/metadata/7bb15389-1016-4d5b-9480-5f1acdadd0f5">Base Hidrográfica ANA</a></span></li>
+      <li><span class="resource-logos" aria-hidden="true"></span><span class="resource-links"><a href="https://github.com/vinirn/minicurso_qgis/raw/refs/heads/main/dados/RN_massas_dagua.gpkg">Massas d'água do Rio Grande do Norte (GeoPackage)</a></span></li>
     </ul>
     <h2>Símbolos SVG para o QGIS</h2>
     <ul class="symbols">
