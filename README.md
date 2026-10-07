@@ -8,6 +8,10 @@ O arquivo [`index.html`](index.html) reúne os links para os dados usados nas at
 
 Os quatro GeoTIFFs de vento do Rio Grande do Norte estão em [`dados/RN_wind`](dados/RN_wind): velocidade do vento e densidade de potência a 100 m e 150 m. A página de recursos oferece um link de download para cada arquivo.
 
+A página também inclui o [Global Wind Atlas](https://globalwindatlas.info/en/) para consulta de mapas e dados de vento.
+
+O [Global Solar Atlas](https://globalsolaratlas.info/) reúne mapas e dados de recurso solar e também está listado na página.
+
 O GeoTIFF [`NDVI_RN_2026.tif`](dados/NDVI_RN_2026.tif) também está disponível para download na página de recursos.
 
 Os símbolos para usar no QGIS estão na pasta [`svg`](svg): dois ícones de aerogerador e quatro ícones de energia solar. A página de recursos mostra uma prévia de cada arquivo e oferece links para baixar os SVGs.
